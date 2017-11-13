@@ -13,4 +13,4 @@
 - ionic cordova build -release android ==> To build apk package
 - Substitute ios for android if not on a Mac
 
-<img src="https://github.com/MohammedDeveloper/myShoppingCart/blob/master/demo1.PNG">
+<img src="https://github.com/MohammedDeveloper/myShoppingCart/blob/master/demo1.png">
