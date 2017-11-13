@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Shopping Cart</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col width-100>
+        <ion-list>
+          <form (ngSubmit)="addItemTocart()">
+            <ion-item>
+              <ion-label floating color="secondary">Item to add</ion-label>
+              <ion-input autofocus [(ngModel)]="item" name="item" maxlength="96" type="text" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating color="secondary">Quantity</ion-label>
+              <ion-input [(ngModel)]="quantity" name="quantity" maxlength="2" type="text" required></ion-input>
+            </ion-item>
+            <ion-label text-center>
+              <button ion-button block type="submit" color="secondary" ion-button round outline>
+                Add</button>
+            </ion-label>
+          </form>
+        </ion-list>
+        <ion-list [hidden]="myCartItems.length === 0" *ngFor="let cart of myCartItems; let i = index;">
+          <ion-item>
+            <ion-label>
+              <h4>{{ cart.item }}</h4>
+              <p>
+                <i>Quantity: {{ cart.quantity }}</i>
+              </p>
+            </ion-label>
+            <ion-label text-right>
+              <ion-icon (click)="removeItemFromcart(i)" ios="ios-remove-circle-outline" md="md-remove-circle"></ion-icon>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-list [hidden]="myCartItems.length > 0">
+          <ion-item text-center>
+            <ion-label>
+              <ion-icon ios="ios-sad-outline" md="md-sad-outline"></ion-icon>
+              No items to shop
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
