@@ -1,5 +1,5 @@
-## myCart App
-Shopping Cart simple app to plan and add the shopping items needed by any bachelor(s) or family
+## myShoppingCart App
+
 
 ### With the Ionic CLI:
 - npm i -g ionic@latest cordova
@@ -13,4 +13,4 @@ Shopping Cart simple app to plan and add the shopping items needed by any bachel
 - ionic cordova build -release android ==> To build apk package
 - Substitute ios for android if not on a Mac
 
-<img src="https://github.com/MohammedDeveloper/iWeather-IonicApp/blob/master/demo1.PNG">
+<img src="https://github.com/MohammedDeveloper/myShoppingCart/blob/master/demo1.PNG">
