@@ -38,3 +38,12 @@ ion-list {
 [padding] h5:first-child, [padding] h6:first-child {
     margin-top: 0.3rem !important;
 }
+
+.item-md, .item-ios {
+    padding-left: 0 !important;
+    border-bottom: 0.5px solid #999 !important;
+}
+
+.no-border {
+    border-bottom: none !important;
+}
